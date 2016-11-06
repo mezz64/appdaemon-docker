@@ -10,13 +10,9 @@ WORKDIR /usr/src/app
 VOLUME /conf
 
 # Grab source
-#COPY . .
-RUN git clone https://github.com/acockburn/appdaemon.git .
+RUN git clone https://github.com/home-assistant/appdaemon.git .
 
 # INSTALL
-# add appdaemon python helpers
-#RUN pip3 install daemonize sseclient configparser astral
 RUN pip3 install .
 
 CMD [ "appdaemon", "-c", "/conf/appdaemon.cfg" ]
-#CMD ["/start.sh"]
