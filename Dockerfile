@@ -10,7 +10,7 @@ WORKDIR /usr/src/app
 VOLUME /conf
 
 # Grab source
-RUN git clone https://github.com/home-assistant/appdaemon.git .
+RUN git clone https://github.com/mezz64/appdaemon.git .
 
 # INSTALL
 RUN pip3 install .
