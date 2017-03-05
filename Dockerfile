@@ -17,4 +17,4 @@ RUN pip3 install daemonize configparser astral 'requests>=2.6.0' && \
     pip3 install sseclient websocket-client async aiohttp==1.2.0 && \
     pip3 install Jinja2==2.9.5 aiohttp_jinja2 pyScss pyyaml voluptuous
 
-CMD [ "appdaemon", "-c", "/conf/appdaemon.cfg" ]
+CMD [ "appdaemon", "-c", "/conf" ]
