@@ -15,4 +15,4 @@ RUN git clone https://github.com/home-assistant/appdaemon.git .
 # INSTALL
 RUN pip3 install .
 
-CMD [ "appdaemon", "-c", "/conf/appdaemon.cfg" ]
+CMD [ "appdaemon", "-c", "/conf" ]
